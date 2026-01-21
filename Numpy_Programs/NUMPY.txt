@@ -1,0 +1,86 @@
+NUMPY
+a = np.array([1, 2, 3, 4, 5, 6])used for 1d array 
+
+a = np.array([[1, 2],[3, 4]]) used for 2d array
+
+np.zeros((2, 3)) used for zeros array in matrix
+ 
+np.ones((2,3)) used for ones array in matrix 
+
+np.eye(3) used for identity matrix (1 0 1)
+
+a = np.array([[1, 2], [3, 4]])
+print(a.shape, a.size)           used for Array shape and size
+
+print(a.dtype)   used for data type
+
+np.arange(1, 20, 2) used for even and odd and to arrange the numbers in order 
+
+np.linspace(0, 1, 5) used for diving in equal parts ex: [0 0.25 0.5 0.75 1]
+ 
+np.arange(6).reshape(2,3) used for arrange the numbers and second is for shaping in matrix
+
+a = np.array([10, 20, 30])
+print(a[1])                used for indexing, pointing the place of the number
+
+a = np.array([10, 20 ,30])
+print(a[1:])              used for slicing, pointing the starting point
+
+b = a.copy()              used for copy 
+
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+print(a + b)              used for element wise addition
+
+print(a - b)        used for element wise subtraction 
+
+print(a / b)         used for element wise division
+
+print(a*b)         used for element wise multiplication  for both 1D and 2D array 
+
+A = np.array([[1,2],[3,4]])
+B = np.array([[5,6],[7,8]])
+print(A + B)          used for matrix addition 
+
+print(A - B)          used for matrix subtraction 
+
+print(A @ B)          used for matrix multiplication
+
+A = np.array([[1,2],[3,4]])
+B = np.array([[5,6],[7,8]])
+X = np.linalg.solve(A, B)
+print(X)               used for matrix division
+
+print(np.mean(a),np.sum(a),np.max(a)) 
+
+print(np.sum(A, axis=0)) column wise addition
+
+print(np.sum(A, axis=1)) row wise addition 
+
+np.count_nonzero([0, 1, 2]) to count non zeros 
+
+row_deleted = np.delete(A, 1, axis=0)
+print(row_deleted)   to delete the ROW 
+
+column_deleted = np.delete(A, 1, axis=0)
+print(column_deleted)   to delete the COLUMN
+
+new_row = np.array([[10, 11, 12]])
+row_added = np.append(A, new_row, axis=0)
+print(row_added)  used to add a row
+
+new_col = np.array([10, 20, 30])
+result = np.insert(A, 1, new_col, axis=1)
+print(result)  used to add a column
+
+
+
+
+
+
+
+
+
+
+
+
