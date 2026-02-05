@@ -62,7 +62,7 @@ np.count_nonzero([0, 1, 2]) to count non zeros
 row_deleted = np.delete(A, 1, axis=0)
 print(row_deleted)   to delete the ROW 
 
-column_deleted = np.delete(A, 1, axis=0)
+column_deleted = np.delete(A, 1, axis=1)
 print(column_deleted)   to delete the COLUMN
 
 new_row = np.array([[10, 11, 12]])
